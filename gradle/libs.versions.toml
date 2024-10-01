@@ -1,0 +1,38 @@
+[versions]
+agp = "8.3.0"
+kotlin = "2.0.10"
+nexus-publish = "2.0.0"
+android-minSdk = "24"
+android-compileSdk = "34"
+androidx-core = "1.13.1"
+androidx-activity = "1.9.2"
+androidx-media = "1.4.1"
+androidx-lifecycle = "2.8.6"
+compose-plugin = "1.7.0-rc01"
+compose-webview = "1.9.40-alpha03"
+image-loader = "1.8.1"
+voyager = "1.0.0"
+vlcj = "4.8.3"
+
+[libraries]
+compose-webview = { module = "io.github.kevinnzou:compose-webview-multiplatform", version.ref = "compose-webview" }
+image-loader = { module = "io.github.qdsfdhvh:image-loader", version.ref = "image-loader" }
+nexus-publish = { module = "io.github.gradle-nexus.publish-plugin:io.github.gradle-nexus.publish-plugin.gradle.plugin", version.ref = "nexus-publish" }
+androidx-core = { module = "androidx.core:core", version.ref = "androidx-core" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
+androidx-media-ui = { module = "androidx.media3:media3-ui", version.ref = "androidx-media" }
+androidx-media-exoplayer-core = { module = "androidx.media3:media3-exoplayer", version.ref = "androidx-media" }
+androidx-media-exoplayer-hls = { module = "androidx.media3:media3-exoplayer-hls", version.ref = "androidx-media" }
+androidx-lifecycle-process = { module = "androidx.lifecycle:lifecycle-process", version.ref = "androidx-lifecycle" }
+voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
+voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }
+voyager-tab = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
+vlcj = { module = "uk.co.caprica:vlcj", version.ref = "vlcj" }
+vlcj-natives = { module = "uk.co.caprica:vlcj-natives", version.ref = "vlcj" }
+
+[plugins]
+android-library = { id = "com.android.library", version.ref = "agp" }
+android-application = { id = "com.android.application", version.ref = "agp" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+compose = { id = "org.jetbrains.compose", version.ref = "compose-plugin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
